@@ -1,0 +1,83 @@
+.hero {
+    background-color: #F5F5F5;
+    height: 100vh;
+    min-height: rem(650px);
+    color: $black;
+    padding: rem(24px) 0 rem(45px);
+
+        &__container {
+        background: url("../img/headphones.svg") right center / 50% auto no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        @include tablets {
+            background: none;
+        }
+        }
+
+        &__title-section {
+            width: 40%;
+
+            @include tablets {
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                text-align: center;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    min-width: rem(318px);
+                    height: rem(323px);
+                    background: url(../img/headphones.svg) center center / contain no-repeat;
+                }
+            }
+        }
+
+        &__icons {
+            @include tablets {
+                display: none;
+            }
+        }
+
+        &__main-title {
+            font-size: rem(50px);
+            font-weight: 700;
+            line-height: 94%;
+            margin-bottom: rem(22px);
+            margin-top: rem(30px);
+            text-transform: uppercase;
+
+            @include tablets {
+                padding: 0 5%;
+            }
+
+            @include phones {
+                font-size: rem(32px);
+                padding: 0 8%;
+            }
+        }
+
+        &__title-desc {
+            font-family: 'Alegreya Sans', Arial, sans-serif;
+            font-size: rem(21px);
+            font-weight: 400;
+            margin-bottom: rem(36px);
+            padding-right: 10%;
+
+            @include tablets {
+                padding: 0 25%;
+            }
+
+            @include phones {
+                padding: 0 19%;
+                font-family: "Play", arial, sans-serif;
+                font-size: rem(18px);
+            }
+        }
+}

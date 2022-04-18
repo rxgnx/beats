@@ -1,0 +1,23 @@
+.section {
+    height: 100vh;
+    min-height: rem(652px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: rem(48px);
+        font-weight: 700;
+        margin-bottom: rem(60px);
+        text-align: center;
+        text-transform: uppercase;
+
+        @include phones {
+            font-size: rem(32px);
+        }
+    }
+
+    &__title--light {
+        color: white;
+    }
+}

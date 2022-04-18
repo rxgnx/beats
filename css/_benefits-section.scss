@@ -1,0 +1,14 @@
+.benefits-section {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: rem(46px);
+        height: rem(11px);
+        background: #C4C4C4;
+        position: absolute;
+        top: -1%;
+        right: 26%;
+        transform: rotate(-45deg);
+    }
+}
