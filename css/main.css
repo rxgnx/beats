@@ -3,16 +3,6 @@
 html {
   font-size: 16px;
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-}
 
 html,
 body {
@@ -141,6 +131,7 @@ img {
   }
   .hero__title-section:before {
     content: "";
+    margin-bottom: 4.625rem;
     min-width: 19.875rem;
     height: 20.1875rem;
     background: url(../svg/headphones.svg) center center/contain no-repeat;
@@ -152,9 +143,9 @@ img {
   }
 }
 .hero__main-title {
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 3.25rem;
   margin-bottom: 1.375rem;
   margin-top: 1.875rem;
   text-transform: uppercase;
@@ -168,6 +159,7 @@ img {
   .hero__main-title {
     font-size: 2rem;
     padding: 0 8%;
+    line-height: 2.25rem;
   }
 }
 .hero__title-desc {
@@ -176,10 +168,12 @@ img {
   font-weight: 400;
   margin-bottom: 2.25rem;
   padding-right: 10%;
+  line-height: 1.5625rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 25%;
+    margin-bottom: 1.375rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -377,10 +371,10 @@ img {
 
 .headline {
   text-align: center;
-  margin-bottom: 3.875rem;
+  margin-bottom: 3.5625rem;
 }
 .headline__title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.3125rem;
 }
 .headline__subtitle {
   font-weight: 400;
@@ -418,6 +412,11 @@ img {
           flex: 1;
   padding: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    padding: 0 0.4%;
+  }
 }
 @media screen and (max-width: 480px) {
   .benefits__item {
@@ -495,7 +494,7 @@ img {
 .benefit__title {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.9375rem;
 }
 .benefit__desc {
   color: #666666;
@@ -526,6 +525,11 @@ img {
   right: 26%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+@media screen and (max-width: 768px) {
+  .benefits-section__container {
+    width: 99%;
+  }
 }
 
 .reviews__main-title {

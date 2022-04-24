@@ -32,6 +32,7 @@
 
                 &:before {
                     content: "";
+                    margin-bottom: rem(74px);
                     min-width: rem(318px);
                     height: rem(323px);
                     background: url(../svg/headphones.svg) center center / contain no-repeat;
@@ -46,9 +47,9 @@
         }
 
         &__main-title {
-            font-size: rem(50px);
+            font-size: rem(48px);
             font-weight: 700;
-            line-height: 94%;
+            line-height: rem(52px);
             margin-bottom: rem(22px);
             margin-top: rem(30px);
             text-transform: uppercase;
@@ -60,6 +61,7 @@
             @include phones {
                 font-size: rem(32px);
                 padding: 0 8%;
+                line-height: rem(36px);
             }
         }
 
@@ -69,9 +71,11 @@
             font-weight: 400;
             margin-bottom: rem(36px);
             padding-right: 10%;
+            line-height: rem(25px);
 
             @include tablets {
                 padding: 0 25%;
+                margin-bottom: rem(22px);
             }
 
             @include phones {
