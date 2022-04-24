@@ -1,0 +1,10 @@
+.contacts__map {
+    position: relative;
+
+    &:before {
+        content: url(../svg/marker.svg);
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+}

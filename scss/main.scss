@@ -1,0 +1,37 @@
+//media
+@import "_media";
+
+//normalize
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+
+//variables
+@import "_variables";
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
+@import "_layout";
+
+//components
+@import "_hero";
+@import "_header";
+@import "_logo";
+@import "_menu";
+@import "_phone-number";
+@import "_features";
+@import "_feature";
+@import "_button";
+@import "_section";
+@import "_headline";
+@import "_benefits";
+@import "_benefit";
+@import "_benefits-section";
+@import "_reviews";
+@import "_interactive-avatar";
+@import "_order-section";
+@import "_form";
+@import "_radio";
+@import "_fixed-menu";
+@import "_hamburger";
+@import "_contacts";
+@import "_footer";
+@import "_socials";

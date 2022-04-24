@@ -1,0 +1,96 @@
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+    
+    &__column {
+        flex: 1;
+        margin-right: rem(26px);
+
+        @include tablets {
+            margin-right: 0;
+        }
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: rem(14px);
+
+        .form__row--textarea {
+            margin-bottom: rem(34px);
+        }
+    }
+
+    &__block {
+        flex: 1;
+        margin-right: rem(16px);
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        color: white;
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: rem(4px);
+        border: none;
+        padding: rem(18px) rem(12px);
+        border: solid rem(3px) transparent;
+
+        @include tablets {
+            padding: rem(8px) rem(10px);;
+        }
+    
+        &-textarea {
+            height: rem(152px);
+            resize: none;
+
+            @include tablets {
+                height: rem(87px);
+            }
+        }
+    
+        &:focus {
+            border-color: $red;
+            outline: none;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(46px);
+        row-gap: rem(19px);
+
+        @include phones {
+            align-items: center;
+        }
+
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__buttons {
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
