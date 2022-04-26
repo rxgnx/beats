@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
     @include tablets {
         justify-content: space-between;

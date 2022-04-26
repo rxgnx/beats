@@ -9,9 +9,13 @@
     &__image {
         margin-bottom: rem(14px);
 
+        @include tablets {
+            margin-bottom: rem(9px);
+        }
+
         @include phones {
             margin-bottom: 0;
-            margin-right: rem(20px);
+            padding-left: rem(7px);
         }
     }
 
@@ -27,8 +31,7 @@
 
     &__text {
         @include phones {
-            padding-left: 2%;
-            padding-right: 7%;
+            padding: rem(10px) rem(26px) rem(0px) rem(11px);
         }
     }
 
@@ -44,7 +47,15 @@
     &__title {
         font-size: rem(24px);
         font-weight: 700;
-        margin-bottom: rem(15px);
+        margin-bottom: rem(5px);
+
+        @include tablets {
+            margin-bottom: rem(9px);
+        }
+
+        @include phones {
+            margin-bottom: rem(0px);
+        }
     }
 
     &__desc {

@@ -3,15 +3,14 @@
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    padding: rem(18px) rem(41px);
+    padding: rem(21px) rem(41px);
     border-radius: rem(100px);
     line-height: 1;
     background-color: $red;
     border: none;
 
-    @include phones {
-        padding: rem(25px) rem(47px);
-        font-size: rem(19px);
+    @include tablets {
+        padding: rem(21px) rem(41px);
     }
     
     &:hover {
