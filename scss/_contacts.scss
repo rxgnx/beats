@@ -1,5 +1,7 @@
 .contacts__map {
     position: relative;
+    display: flex;
+    flex: 1;
 
     &:before {
         content: url(../svg/marker.svg);
@@ -7,4 +9,10 @@
         top: 20%;
         left: 35%;
     }
+}
+
+.contacts__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

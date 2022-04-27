@@ -7,7 +7,11 @@
     }
 
     &__title {
-        margin-bottom: rem(21px);
+        margin-bottom: rem(49px);
+
+        @include tablets {
+            margin-bottom: rem(21px);
+        }
 
         @include phones {
             margin-bottom: rem(33px);
