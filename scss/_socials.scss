@@ -21,6 +21,11 @@
         width: rem(30px);
         height: rem(30px);
         transition: 0.3s;
+        color: #B3B3B3;
+
+        &:hover {
+            color: #000;
+        }
 
         @include phones {
             width: rem(24px);

@@ -4,6 +4,7 @@
     align-items: center;
     white-space: nowrap;
     transition: 0.3s;
+    color: $black;
 
     @include phones {
         font-size: rem(16px);
@@ -18,9 +19,5 @@
         height: rem(14px);
         margin-right: rem(6px);
         flex-shrink: 0;
-
-        &:hover {
-            fill: $red;
-        }
     }
 }
