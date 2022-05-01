@@ -53,7 +53,7 @@
         border: solid rem(3px) transparent;
 
         @include tablets {
-            padding: rem(8px) rem(10px);;
+            padding: rem(6px) rem(10px);
         }
     
         &-textarea {
@@ -61,7 +61,11 @@
             resize: none;
 
             @include tablets {
-                height: rem(87px);
+                height: rem(82px);
+            }
+
+            @include phones {
+                margin-bottom: rem(9px);
             }
         }
     
@@ -77,8 +81,13 @@
         margin-bottom: rem(46px);
         row-gap: rem(19px);
 
+        @include tablets {
+            row-gap: rem(27px);
+        }
+
         @include phones {
             align-items: center;
+            margin-bottom: rem(34px);
         }
 
         &-row {

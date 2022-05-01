@@ -16,7 +16,13 @@
 
 .footer__column {
     @include phones {
-        margin-bottom: rem(19px);
+        margin-bottom: rem(15px);
+
+        .footer__column_socials {
+            @include phones {
+                margin-bottom: rem(31px);
+            }
+        }
     }
 }
 
@@ -36,6 +42,7 @@
     }
 
     @include phones {
-        margin-bottom: rem(12px);
+        font-size: rem(18px);
+        margin-bottom: rem(10px);
     }
 }

@@ -1,27 +1,15 @@
-$containerWidth: 940px;
-$baseFontSize: 16px;
-
-//breakpoints
-$tablets: 768px;
-$phones: 480px;
-
-//colors
-$black: #292929;
-$red: #E01F3D;
-$gray: #666666;
-
 //media
 @import "_media";
-
-//z-indices
-$z-fixed-menu: 100;
 
 //normalize
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 
+//variables
+@import "_variables";
+
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
-@import "layout";
+@import "_layout";
 
 //components
 @import "_hero";

@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    padding-top: rem(7px);
     transition: 0.3s;
+    color: $black;
+
+    @include phones {
+        font-size: rem(16px);
+    }
 
     &:hover {
         color: $red;
@@ -15,9 +19,5 @@
         height: rem(14px);
         margin-right: rem(6px);
         flex-shrink: 0;
-
-        &:hover {
-            fill: $red;
-        }
     }
 }

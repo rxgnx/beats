@@ -1,12 +1,8 @@
 html {
     font-size: $baseFontSize;
 
-    @include tablets {
-        font-size: $baseFontSize - 1px;
-    }
-
     @include phones {
-        font-size: $baseFontSize - 2px;
+        font-size: 3.3333vmin;
     }
 }
 
@@ -65,8 +61,12 @@ p {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
 }
 
 * {

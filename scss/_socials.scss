@@ -4,15 +4,28 @@
     &__item {
         margin-left: rem(10px);
 
+        @include tablets {
+            margin-left: rem(12px);
+        }
+
+        @include phones {
+            margin-left: rem(15px);
+        }
+
         &:first-child {
             margin-left: 0;
         }
     }
 
     &__icon {
-        width: 30px;
-        height: 30px;
+        width: rem(30px);
+        height: rem(30px);
         transition: 0.3s;
+        color: #B3B3B3;
+
+        &:hover {
+            color: #000;
+        }
 
         @include phones {
             width: rem(24px);

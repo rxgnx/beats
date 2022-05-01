@@ -3,13 +3,21 @@
     margin-bottom: rem(62px);
 
     &__title {
-        margin-bottom: rem(12px);
+        margin-bottom: rem(16px);
+
+        @include tablets {
+            margin-bottom: rem(6px);
+        }
+
+        @include phones {
+            margin-bottom: rem(8px);
+        }
     }
 
     &__subtitle {
         font-weight: 400;
         color: $gray;
-        line-height: 100%;
+        line-height: 110%;
         padding: 0 21%;
 
         @include tablets {
@@ -17,7 +25,7 @@
         }
 
         @include phones {
-            padding: 0 10%;
+            padding: 0 8%;
         }
     }
 }

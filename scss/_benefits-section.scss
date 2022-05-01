@@ -11,4 +11,10 @@
         right: 26%;
         transform: rotate(-45deg);
     }
+
+    &__container {
+        @include tablets {
+            width: 99%;
+        }
+    }
 }

@@ -10,13 +10,17 @@
         padding: 0 3%;
         position: relative;
 
+        @include tablets {
+            padding: 0 0.4%;
+        }
+
         @include phones {
             padding: 0;
-            margin-bottom: rem(14px);
+            margin-bottom: rem(30px);
         }
     
         &:before {
-            content: url(../img/separator.svg);
+            content: url(../svg/separator.svg);
             position: absolute;
             top: rem(59px);
             right: 0;
