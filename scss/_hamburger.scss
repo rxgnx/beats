@@ -7,6 +7,7 @@ display: none;
 
 @include tablets {
     display: inline-flex;
+    z-index: $z-hamburger;
 }
 
 &__plank {
