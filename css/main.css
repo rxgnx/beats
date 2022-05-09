@@ -1041,15 +1041,6 @@ button {
 }
 
 .hamburger {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1.625rem;
-  height: 1.4375rem;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -1060,11 +1051,55 @@ button {
     z-index: 100;
   }
 }
-.hamburger__plank {
-  display: block;
-  background: #292929;
-  height: 0.3125rem;
-  border-radius: 0.625rem;
+
+.hamburger__menu {
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 .contacts__map {
