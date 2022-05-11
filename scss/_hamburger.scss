@@ -6,26 +6,18 @@ display: none;
     z-index: $z-hamburger;
 }}
 
-// &__plank {
-//     display: block;
-//     background: $black;
-//     height: rem(5px);
-//     border-radius: rem(10px);
-// }
-// }
-  .hamburger__menu {
-    background-color: transparent;
-    border: none;
-    display: flex;
-    padding: 0;
-  }
   .line {
     fill: none;
     stroke: black;
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke .5s;
   }
+
+  .opened .line {
+    stroke: #fff;
+  }
+
   .line1 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
