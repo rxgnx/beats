@@ -1,7 +1,22 @@
 .menu {
 
     @include tablets {
+        left: -100%;
         display: none;
+
+        &.active {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+            background: #333537;
+            z-index: $z-mobile-menu;
+            transition: left 3s;
+        }
     }
     padding-top:rem(8px);
 
@@ -10,6 +25,13 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+
+        @include tablets {
+            flex-direction: column;
+            height: 54%;
+            text-align: center;
+            color: white;
+        }
     }
 
     &__item {
@@ -19,11 +41,21 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @include tablets {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
 
     &__link {
         font-family: 'Alegreya Sans', Arial, sans-serif;
         font-size: rem(18px);
         white-space: nowrap;
+
+        @include tablets {
+            font-family: "Play", Arial, sans-serif;
+            font-size: rem(36px);
+        }
     }
 }
