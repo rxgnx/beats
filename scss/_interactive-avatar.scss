@@ -11,7 +11,7 @@
     height: rem(73px);
    }
 
-   &--active {
+   &--active, &:hover {
        border-color: $red;
    }
 

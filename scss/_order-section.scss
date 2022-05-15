@@ -1,9 +1,14 @@
 .order-section {
     background: url(../img/dark-background.png) center center no-repeat;
+    position: relative;
 
     @include tablets {
         display: flex;
         flex-direction: column;
+    }
+
+    &__container {
+        position: static;
     }
 
     &__title {
