@@ -1,5 +1,7 @@
 .reviews__main-title {
     margin-bottom: rem(23px);
+    position: relative;
+    z-index: 1000;
 
     @include tablets {
         margin-bottom: rem(23px);

@@ -1,26 +1,39 @@
+.team__title {
+    margin-bottom: rem(45px);
+
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
+}
+
 .team__list {
     display: flex;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: rem(21px);
+    min-height: rem(454px);
 
     @include tablets {
         flex-direction: column;
         align-items: center;
+        min-height: rem(568px);
+    }
+
+    @include tablets {
+        min-height: rem(647px);
     }
 }
 
 .team__item {
     flex: 1;
-    min-height: rem(454px);
     text-align: center;
 
     @include tablets {
-        min-height: 0;
+        margin-bottom: rem(5px);
     }
 }
 
 .team__photo {
-    margin-bottom: 25px;
+    margin-bottom: rem(22px);
 
     @include tablets {
         display: none;
@@ -33,22 +46,21 @@
     justify-content: center;
     font-size: rem(18px);
     font-weight: 700;
-    position: relative;
+    margin-bottom: rem(8px);
 
     &:after {
         content: "";
-        position: absolute;
         background: url(../svg/arrow.svg) center center no-repeat;
         width: rem(9px);
         height: rem(9px);
-        right: rem(5px);
+        margin-left: 5px;
     }
 }
 
 .team__description {
     height: 0;
     overflow: hidden;
-    transition: height .3s;
+    transition: height .3s;   
 }
 
 .team__photo--hidden {
@@ -61,9 +73,17 @@
 }
 
 .team__position {
-    margin-bottom: rem(4px);
+    @include tablets {
+        font-size: rem(18px);
+        font-weight: 700;
+    } 
 }
 
 .team__position-desc {
     color: $gray;
+    padding: 0 rem(38px);
+
+    @include tablets {
+        padding: 0 rem(248px);
+    }
 }

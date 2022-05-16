@@ -54,9 +54,11 @@ $(".form").submit(e => {
 
         request.always(() => {
             modal.toggleClass("modal-visible");
+            $("body").addClass("not-scrollable");
             modal.find(".modal__closing-button").on("click", e => {
                 e.preventDefault();
                 modal.removeClass("modal-visible");
+                $("body").removeClass("not-scrollable");
             });
         });
     }

@@ -5,6 +5,7 @@
 .products__control {
   top: 50%;
   position: absolute;
+  z-index: 100;
   @include tablets {
     top: 25%;
   }
