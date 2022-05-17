@@ -1,0 +1,38 @@
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #313131;
+
+    &.error-modal {
+        .modal__content {
+            color: red;
+        }
+    }
+}
+
+.modal__container {
+    background: #fff;
+    padding: 35px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__content {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.modal-visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-scrollable {
+    overflow-y: hidden
+}

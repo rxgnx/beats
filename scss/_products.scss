@@ -5,22 +5,36 @@
 .products__control {
   top: 50%;
   position: absolute;
+  z-index: 100;
   @include tablets {
-    display: none;
+    top: 25%;
   }
 
   &--left {
     left: rem(-19px);
+    @include tablets {
+      left: 15%;
+    }
   }
 
   &--right {
     right: rem(-19px);
+    @include tablets {
+      right: 15%;
+    }
   }
 
   &-icon {
     width: rem(14px);
     height: rem(33px);
   }
+}
+
+.products__slider {
+  .bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;}
 }
 
 .products__item {
@@ -54,30 +68,48 @@
     padding-top: 0;
     width: 306px;
 
-    &:before {
-      content: "";
-      background: url(../svg/left-control.svg) center center no-repeat;
-      width: rem(14px);
-      height: rem(33px);
-      position: absolute;
-      top: 50%;
-      left: -25%;
-    }
-    &:after {
-      content: "";
-      background: url(../svg/right-control.svg) center center no-repeat;
-      width: rem(14px);
-      height: rem(33px);
-      position: absolute;
-      top: 50%;
-      right: -25%;
-    }
+    // &:before {
+    //   content: "";
+    //   background: url(../svg/left-control.svg) center center no-repeat;
+    //   width: rem(14px);
+    //   height: rem(33px);
+    //   position: absolute;
+    //   top: 50%;
+    //   left: -25%;
+    // }
+    // &:after {
+    //   content: "";
+    //   background: url(../svg/right-control.svg) center center no-repeat;
+    //   width: rem(14px);
+    //   height: rem(33px);
+    //   position: absolute;
+    //   top: 50%;
+    //   right: -25%;
+    // }
   }
 
   @include phones {
     margin-bottom: 0;
   }
 }
+
+// .products__mobile-control {
+//   position: absolute;
+//   top: 50%;
+//   display: none;
+
+//   @include tablets {
+//     display: block;
+//   }
+
+//   &--left {
+//     left: 15%;
+//   }
+
+//   &--right {
+//     right: 15%;
+//   }
+// }
 
 .products-parameters {
   display: inline-flex;

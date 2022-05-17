@@ -1,20 +1,34 @@
 .reviews__main-title {
     margin-bottom: rem(23px);
+    position: relative;
+    z-index: 1000;
 
     @include tablets {
         margin-bottom: rem(23px);
     }
 }
 
-.reviews__display {
+.reviews__list {
+    position: relative;
+}
+
+.reviews__item {
     background: $bg-color;
     padding: rem(42px) rem(142px) rem(42px) rem(42px);
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     margin-bottom: rem(15px);
+    opacity: 0;
 
     @include tablets {
         padding: rem(56px) rem(15px);
+    }
+
+    &.active {
+        position: static;
+        opacity: 1;
     }
 
     &:before {
@@ -35,7 +49,7 @@
     }
 }
 
-.reviews__display-inner {
+.reviews__item-inner {
     display: flex;
 
     @include tablets {

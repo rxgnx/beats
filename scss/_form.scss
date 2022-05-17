@@ -73,6 +73,10 @@
             border-color: $red;
             outline: none;
         }
+
+        &--error {
+            border-color: $red;
+        }
     }
 
     &__controls {
